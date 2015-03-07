@@ -20,4 +20,5 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  connect: 
+    email: "connect@defiantventures.co?subject=Connect with Defiant Ventures&body=Hi Defiant Ventures,%0D%0A%0D%0AI would like to inquire about ...."
