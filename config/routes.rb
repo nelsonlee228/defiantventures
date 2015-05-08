@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "intake_form" => "home#intake_form", as: :intake_form
+
   root "home#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

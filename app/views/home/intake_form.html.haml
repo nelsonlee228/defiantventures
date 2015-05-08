@@ -1,0 +1,108 @@
+%article
+  %h1 Intake Form
+  %form#register{:action => "/register-user", :method => "get|post", :name => "register"}
+    %p
+      1. Describe your business or idea in a brief paragraph - include name,
+      team members, website, and any other relevant information you can provide
+      for us.
+    .form-group
+      %textarea#idea{:maxlength => "1000"}
+    %p
+      2. If your business already exists, which of the following do you have
+      accounted for?
+    %p Select all that apply.
+    .form-group
+      %label{:for => "incorporation"}
+        %input#incorporation.form-control{:name => "funding", :type => "checkbox"}/
+        Incorporation
+      %label{:for => "shareholders"}
+        %input#shareholders.form-control{:name => "funding", :type => "checkbox"}/
+        Shareholder Agreement
+      %label{:for => "accounting"}
+        %input#accounting.form-control{:name => "funding", :type => "checkbox"}/
+        Accounting Services
+      %label{:for => "grants"}
+        %input#grants.form-control{:name => "funding", :type => "checkbox"}/
+        Funding - Grants
+      %label{:for => "investors"}
+        %input#investors.form-control{:name => "funding", :type => "checkbox"}/
+        Funding - Investors
+      %label{:for => "newbiz"}
+        %input#newbiz.form-control{:name => "funding", :type => "checkbox"}/
+        New Business
+    %p
+      3. Which of the following business services do you require support
+      for?
+    .form-group
+      %label{:for => "setup"}
+        %input#setup.form-control{:name => "services", :type => "checkbox", :value => "setup"}/
+        Company Setup (Legal &
+        Admin)
+      %label{:for => "OMT"}
+        %input#OMT.form-control{:name => "services", :type => "checkbox", :value => "OMT"}/
+        Online Management
+        Tools
+      %label{:for => "marketing"}
+        %input#marketing.form-control{:name => "services", :type => "checkbox", :value => "marketing"}/
+        Marketing
+      %label{:for => "strategy"}
+        %input#strategy.form-control{:name => "services", :type => "checkbox", :value => "strategy"}/
+        Strategy &
+        Research
+      %label{:for => "fundraising"}
+        %input#fundraising.form-control{:name => "services", :type => "checkbox", :value => "fundraising"}/
+        Fundraising
+      %label{:for => "technology"}
+        %input#technology.form-control{:name => "services", :type => "checkbox", :value => "technology"}/
+        Technology
+    %h3 Your Technology
+    %p 1. What type of technology are you seeking assistance with?
+    .form-group
+      %h4 Website
+      %label{:for => "personal"}
+        %input#personal.form-control{:name => "website", :type => "checkbox", :value => "personal"}/
+        Personal
+      %label{:for => "business"}
+        %input#business.form-control{:name => "website", :type => "checkbox"}/
+        Business
+      %label{:for => "software"}
+        %input#software.form-control{:name => "website", :type => "checkbox"}/
+        Software
+    .form-group
+      %h4 Mobile App
+      %label{:for => "appstore"}
+        %input#appstore.form-control{:name => "mobileapp", :type => "checkbox"}/
+        App Store
+      %label{:for => "appstore"}
+        %input#googleplay.form-control{:name => "mobileapp", :type => "checkbox"}/
+        Google Play
+    %p
+      2. In order to proceed with development, we will need fully annotated
+      wireframes - these include complete instructions on page flow, links,
+      buttons and details on the functionality of your proposed technology.
+      Which of the following do you have completed?
+    .form-group
+      %label{:for => "concept"}
+        %input#concept.form-control{:name => "wireframes", :type => "checkbox"}/
+        Concept Sketch
+      %label{:for => "graphic"}
+        %input#graphic.form-control{:name => "wireframes", :type => "checkbox"}/
+        Graphic Designs without annotations
+      %label{:for => "annotated"}
+        %input#annotated.form-control{:name => "wireframes", :type => "checkbox"}/
+        Fully annotated wireframe designs
+      %label{:for => "noneyet"}
+        %input#noneyet.form-control{:name => "wireframes", :type => "checkbox"}/
+        No Wireframes (yet...)
+    %p
+      3. Do you anticipate hiring a full-time employee for technological
+      support?
+    .form-group
+      %label{:for => "yes"}
+        %input#yes.form-control{:name => "hiring", :type => "checkbox"}/
+        Yes
+    .form-group
+      %input#button.button{:name => "button", :type => "submit", :value => "Send"}/
+  %hr/
+  %footer
+    Copyright Deviant Ventures 2015

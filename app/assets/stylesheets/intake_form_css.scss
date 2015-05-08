@@ -1,0 +1,135 @@
+// INTAKE FORM CSS
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+/* *** Begin CSS for Registration Form Page. *** */
+
+header, nav, article, section, footer, address {
+  display:block;
+  background: #0d0d0d;
+}
+
+h1, h2, h3, h4, h5, h6 {margin: 0;}
+
+h4 {
+  padding: 1em;
+}
+
+
+body {
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  padding: 4em 3em 4em;
+  word-wrap: break-word;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+h1, h2, p {
+  margin: 0;
+  line-height: 1.6em;
+
+}
+
+p {margin-bottom: 1em;}
+
+
+textarea {
+  color: #0d0d0d;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 250px;
+  max-height: 900px;
+  border: none;
+}
+/*
+#idea {
+  max-width: 600px;
+  height: 300px;
+  border: 2px;
+  background-color: #fff;
+  position: center;
+}*/
+
+article {
+  max-width: 66%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 2em;
+  padding: 0em;
+  overflow: hidden;
+  }
+
+form {
+  padding: 0em 0em 2em 0em;
+}
+
+footer {
+  padding: 2em 2em;
+  font-size: 1em;
+  color: #fff;
+}
+
+/*Submit Button*/
+
+.button {
+  border: none;
+   background: #fff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+   background: -webkit-linear-gradient(top, #fff, #fff);
+   background: -moz-linear-gradient(top, #fff, #fff);
+   background: -ms-linear-gradient(top, #fff, #fff);
+   background: -o-linear-gradient(top, #fff, #fff);
+   padding: 0.4em 0.8em;
+   -webkit-border-radius: 0.2em;
+   -moz-border-radius: 0.2em;
+   border-radius: 0.2em;
+   color: #000;
+   font-size: 1em;
+   font-family: 'Open Sans', "Helvetica Neue";
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: none;
+   vertical-align: middle;
+
+   }
+
+.button:hover {
+  background: #fff;
+  color: #000;
+   }
+
+.button:active {
+
+   background: #fff;
+   color: #0d0d0d;
+   }
+
+
+.form-group label  {
+  display: block;
+  padding: 0.2em 0.5em;
+  background: #494949;
+  margin-bottom: 0.5em;
+  }
+
+
+hr {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    position: relative;
+
+}
+
+/*hr:after {
+    content:
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+}*/
